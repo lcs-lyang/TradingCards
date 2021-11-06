@@ -9,13 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack{
+            
+            HStack{
+                
+                Image("cheescake")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                
+                Text("""
+                     Cake: Cheescake
+                     Type: Sweet
+                     Origin: Ancient Greece
+                     Usual topping: fruit jam
+                     """)
+                
+            Spacer()
+                
+            }
+            Spacer()
+            
+            
+            
+        }
+        
+        .navigationTitle("Cheesecake")
+        
+        
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        NavigationView{
+            ContentView()
+        }
     }
 }
