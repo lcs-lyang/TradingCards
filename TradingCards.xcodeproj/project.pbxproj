@@ -11,6 +11,7 @@
 		196874542736CBE4000D1A29 /* Cheesecake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196874532736CBE4000D1A29 /* Cheesecake.swift */; };
 		196874562736CBE7000D1A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196874552736CBE7000D1A29 /* Assets.xcassets */; };
 		196874592736CBE7000D1A29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196874582736CBE7000D1A29 /* Preview Assets.xcassets */; };
+		19D9D2DB273CBF7800927B74 /* TradingCardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9D2DA273CBF7800927B74 /* TradingCardsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		196874532736CBE4000D1A29 /* Cheesecake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheesecake.swift; sourceTree = "<group>"; };
 		196874552736CBE7000D1A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		196874582736CBE7000D1A29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19D9D2DA273CBF7800927B74 /* TradingCardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,6 @@
 			children = (
 				196874512736CBE4000D1A29 /* TradingCardsApp.swift */,
 				19693FBE2739862100A429BB /* Views */,
-				196874532736CBE4000D1A29 /* Cheesecake.swift */,
 				196874552736CBE7000D1A29 /* Assets.xcassets */,
 				196874572736CBE7000D1A29 /* Preview Content */,
 			);
@@ -71,8 +72,18 @@
 		19693FBE2739862100A429BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				196874532736CBE4000D1A29 /* Cheesecake.swift */,
+				19D9D2D9273CBCF200927B74 /* Model */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		19D9D2D9273CBCF200927B74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19D9D2DA273CBF7800927B74 /* TradingCardsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				196874542736CBE4000D1A29 /* Cheesecake.swift in Sources */,
+				19D9D2DB273CBF7800927B74 /* TradingCardsModel.swift in Sources */,
 				196874522736CBE4000D1A29 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,17 +53,24 @@ struct ContentView: View {
                                     .frame(width: 150, height: 200)
                                     .clipShape(Circle())
                                 
-                                
-                                Text("""
-                                             Type: Cheesecake
-                                             Origin: Ancient Greece
-                                             Flavor: sweet, creamy, delicious
-                                             Topping: fruit jam
-                                             """)
-                                    .fontWeight(.ultraLight)
-                                    .font(Font.custom("Gill Sans", size: 24))
-                                    .foregroundColor(.white)
-                                
+                                VStack (alignment:.leading){
+                                    Text("Type: Cheescake")
+                                        .fontWeight(.ultraLight)
+                                        .font(Font.custom("Gill Sans", size: 24))
+                                        .foregroundColor(.white)
+                                    Text("Origin: Ancient Greece")
+                                        .fontWeight(.ultraLight)
+                                        .font(Font.custom("Gill Sans", size: 24))
+                                        .foregroundColor(.white)
+                                    Text("Flavor: sweet, creamy")
+                                        .fontWeight(.ultraLight)
+                                        .font(Font.custom("Gill Sans", size: 24))
+                                        .foregroundColor(.white)
+                                    Text("Topping: fruit jam")
+                                        .fontWeight(.ultraLight)
+                                        .font(Font.custom("Gill Sans", size: 24))
+                                        .foregroundColor(.white)
+                                }
                             }
                             
                             
