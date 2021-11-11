@@ -100,7 +100,7 @@ struct ContentView_Previews: PreviewProvider {
         
         NavigationView{
             
-            DetailView()
+            DetailView(item: listOfItems.first!)
         }
     }
 }
