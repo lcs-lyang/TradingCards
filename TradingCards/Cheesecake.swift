@@ -10,30 +10,45 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack{
+        VStack (alignment:.leading){
             
             
             VStack{
-                ZStack{
+                ZStack (alignment: .bottomLeading){
                     
                     
                     Image("cheesecakesss")
                         .resizable()
                         .scaledToFit()
                         
-                        .border(Color.purple, width:40)
+                        .border(Color.brown, width:40)
                         .border(Color.yellow, width:20)
-                        .border(Color.purple, width:10)
+                        .border(Color.brown, width:10)
                     
-                    Image("star png")
+                    Image("michelinstarred")
                         .resizable()
-                        .scaledToFit()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 150, height:100)
+                        
+                        
                         
                     
                 }
                 
-                Text("Type: Cheesecake")
-                Spacer()
+                VStack{
+                    
+                    Text("""
+                         Type: Cheesecake
+                         Origin: Ancient Greece
+                         Flavor: sweet, creamy, delicious
+                         Topping: fruit jam
+                         """)
+                        .fontWeight(.ultraLight)
+                        .font(Font.custom("Gill Sans", size: 24))
+                        .frame(width: .infinity, height: .infinity)
+
+                }
+                                Spacer()
             }
             
             
