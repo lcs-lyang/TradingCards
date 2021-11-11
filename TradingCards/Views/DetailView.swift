@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     var body: some View {
         
         ScrollView{
@@ -26,7 +26,7 @@ struct ContentView: View {
                         ZStack (alignment: .bottomLeading){
                             
                             
-                            Image("cheesecakesss")
+                            Image(item.imageName)
                                 .resizable()
                                 .scaledToFit()
                             
@@ -54,19 +54,19 @@ struct ContentView: View {
                                     .clipShape(Circle())
                                 
                                 VStack (alignment:.leading){
-                                    Text("Type: Cheescake")
+                                    Text(item.type)
                                         .fontWeight(.ultraLight)
                                         .font(Font.custom("Gill Sans", size: 24))
                                         .foregroundColor(.white)
-                                    Text("Origin: Ancient Greece")
+                                    Text(item.origin)
                                         .fontWeight(.ultraLight)
                                         .font(Font.custom("Gill Sans", size: 24))
                                         .foregroundColor(.white)
-                                    Text("Flavor: sweet, creamy")
+                                    Text(item.flavor)
                                         .fontWeight(.ultraLight)
                                         .font(Font.custom("Gill Sans", size: 24))
                                         .foregroundColor(.white)
-                                    Text("Topping: fruit jam")
+                                    Text(item.topping)
                                         .fontWeight(.ultraLight)
                                         .font(Font.custom("Gill Sans", size: 24))
                                         .foregroundColor(.white)
@@ -79,11 +79,7 @@ struct ContentView: View {
                         
                     }
                     
-                    
-                    
-                    
                 }
-                
                 
             }
             
@@ -94,30 +90,17 @@ struct ContentView: View {
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget odio vitae orci scelerisque ultrices ut eget neque. Curabitur ac cursus augue. Nunc pellentesque massa eget sapien posuere elementum. Suspendisse ac metus euismod, mattis neque eu, eleifend nisi. Nulla finibus pretium tortor, eu tristique ligula scelerisque sit amet. Cras dictum interdum pharetra. Donec fringilla turpis nec nulla sollicitudin, quis tempus risus maximus. Donec nec eros a nisl dictum cursus. Integer volutpat pharetra orci, vel vestibulum erat dignissim id. Integer tempus risus sit amet felis cursus, non ullamcorper mi eleifend. Morbi fringilla posuere nibh, in vehicula purus tristique eget.
 """)
             }
-            
-            
         }
-        
-        
-        
-        .navigationTitle("Cheesecake")
+        .navigationTitle(item.navigationName)
     }
-    
-    
-    
-    
 }
-
-
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         NavigationView{
-            ContentView()
+            
+            DetailView()
         }
     }
 }
