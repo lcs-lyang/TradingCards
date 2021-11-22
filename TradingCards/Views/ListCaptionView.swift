@@ -28,6 +28,7 @@ struct ListCaptionView: View {
                             .bold()
                         Text (listText2)
                             .font(.caption)
+                            
                     }
                     
                 }

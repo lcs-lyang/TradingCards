@@ -33,6 +33,9 @@ struct TradingCardsList: View {
 
 struct TradingCardsList_Previews: PreviewProvider {
     static var previews: some View {
-        TradingCardsList()
+        NavigationView{
+            TradingCardsList()
+        }
+        
     }
 }
