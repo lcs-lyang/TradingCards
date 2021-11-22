@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    let item: TradingCardsModel
+    
     var body: some View {
+        
+        
         
         ScrollView{
             

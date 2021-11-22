@@ -22,6 +22,7 @@ struct ListCaptionView: View {
                         .scaledToFill()
                         .frame(width: 50, height: 50, alignment: .center)
                         .clipped()
+                        .clipShape(Circle())
                     VStack(alignment: .leading){
                         Text(listText)
                             .bold()
